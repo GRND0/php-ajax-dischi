@@ -13,11 +13,15 @@
 
 <body>
     <main id="root">
-        <div v-for="dati in database" class="contenitore-card">
-            <img :src="dati.poster" alt="" />
-            <h3>{{ dati.title }}</h3>
-            <small>{{ dati.author }}</small>
-            <small>{{ dati.year }}</small>
+        <div class="wrapper">
+            <div class="contenitore-brani">
+                <div v-for="dati in database" class="contenitore-card">
+                    <img :src="dati.poster" alt="" />
+                    <h3>{{ dati.title }}</h3>
+                    <small>{{ dati.author }}</small>
+                    <small>{{ dati.year }}</small>
+                </div>
+            </div>
         </div>
     </main>
 
